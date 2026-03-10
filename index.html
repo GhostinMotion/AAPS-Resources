@@ -8,7 +8,7 @@
       const redirect = sessionStorage.getItem('redirect');
       if (redirect && redirect !== '/') {
         sessionStorage.removeItem('redirect');
-        window.history.replaceState(null, '', '/AAPS-Student-Managed-Resources' + redirect);
+        window.history.replaceState(null, '', '/AAPS-Resources' + redirect);
       }
     </script>
     <script type="module" crossorigin src="/AAPS-Resources/assets/index-B99wUTxU.js"></script>
