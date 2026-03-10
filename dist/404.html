@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <script>
       const path = window.location.pathname;
-      const base = '/AAPS-Student-Managed-Resources';
+      const base = '/AAPS-Resources';
       const route = path.replace(base, '') || '/';
       sessionStorage.setItem('redirect', route);
       window.location.replace(base + '/');
