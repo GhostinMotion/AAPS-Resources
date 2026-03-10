@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmanaResources - Resource Hub</title>
-    <script type="module" crossorigin src="/AAPS-Student-Managed-Resources/assets/index-D3us-rWX.js"></script>
-    <link rel="stylesheet" crossorigin href="/AAPS-Student-Managed-Resources/assets/index-BgQBJbxE.css">
+    <script>
+      const redirect = sessionStorage.getItem('redirect');
+      if (redirect && redirect !== '/') {
+        sessionStorage.removeItem('redirect');
+        window.history.replaceState(null, '', '/AAPS-Student-Managed-Resources' + redirect);
+      }
+    </script>
+    <script type="module" crossorigin src="/AAPS-Resources/assets/index-B99wUTxU.js"></script>
+    <link rel="stylesheet" crossorigin href="/AAPS-Resources/assets/index-BgQBJbxE.css">
   </head>
   <body>
     <div id="root"></div>
